@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package backend;
+
+service MonitorService {
+  rpc GetSystemInfo (MonitorRequest) returns (MonitorResponse);
+}
+
+message MonitorRequest {}
+
+message MonitorResponse {
+  string data = 1;
+}
+
